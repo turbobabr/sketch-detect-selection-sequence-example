@@ -1,0 +1,28 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Main Command",
+      "identifier": "main",
+      "shortcut": "control shift t",
+      "script": "main.js"
+    },
+    {
+      "name": "Selection Tracker",
+      "identifier": "selectionTracker",
+      "script": "tracker.js",
+      "handlers": {
+        "actions" : {
+          "SelectionChanged.finish" : "run"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "selection-sequence",
+    "items": [
+      "main"
+    ]
+  }
+}
